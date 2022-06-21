@@ -16,8 +16,11 @@ app.use(cookieParser());
 
 app.use(bodyParser.urlencoded())
 app.use(bodyParser.json())
-app.use(bodyParser.text({
+app.use(bodyParser.raw({
     type: 'application/octet-stream'
+}))
+app.use(bodyParser.text({
+    type: 'text/plain'
 }))
 
 app.use('/', indexRouter);
