@@ -1,0 +1,17 @@
+{
+  "name": "sls-echo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": " curl 127.0.0.1:3000 -H'Content-type: application/octet-stream' --data-binary @bindata.txt -XPOST"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  }
+}
